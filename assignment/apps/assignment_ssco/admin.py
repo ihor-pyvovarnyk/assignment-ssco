@@ -1,7 +1,7 @@
 from django.contrib import admin
 from django.db.models import Avg
 
-from assignment.models import PointOfInterest
+from assignment.apps.assignment_ssco.models import PointOfInterest
 
 
 class PointOfInterestAdmin(admin.ModelAdmin):

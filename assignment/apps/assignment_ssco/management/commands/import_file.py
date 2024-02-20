@@ -11,7 +11,7 @@ from django.core.management.base import BaseCommand
 from django.db import transaction
 from django.db.models import Model
 
-from assignment.models import PointOfInterest, PointOfInterestRating, PointOfInterestCategory
+from assignment.apps.assignment_ssco.models import PointOfInterest, PointOfInterestRating, PointOfInterestCategory
 
 
 class Command(BaseCommand):

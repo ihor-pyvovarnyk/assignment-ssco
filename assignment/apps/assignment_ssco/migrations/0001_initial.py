@@ -28,7 +28,7 @@ class Migration(migrations.Migration):
                 ('name', models.TextField()),
                 ('description', models.TextField()),
                 ('category', models.TextField()),
-                ('coordinates', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='point_of_interest', to='assignment.pointofinterestcoordinates')),
+                ('coordinates', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='point_of_interest', to='assignment_ssco.pointofinterestcoordinates')),
             ],
         ),
         migrations.CreateModel(
@@ -36,7 +36,7 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('rating', models.FloatField()),
-                ('point_of_interest', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='ratings', to='assignment.pointofinterest')),
+                ('point_of_interest', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='ratings', to='assignment_ssco.pointofinterest')),
             ],
         ),
     ]

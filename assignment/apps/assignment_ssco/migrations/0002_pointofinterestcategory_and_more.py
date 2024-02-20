@@ -7,7 +7,7 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('assignment', '0001_initial'),
+        ('assignment_ssco', '0001_initial'),
     ]
 
     operations = [
@@ -47,12 +47,12 @@ class Migration(migrations.Migration):
         ),
         migrations.AddIndex(
             model_name='pointofinterestrating',
-            index=models.Index(fields=['point_of_interest'], name='assignment__point_o_ad8869_idx'),
+            index=models.Index(fields=['point_of_interest'], name='assignment_ssco__point_o_ad8869_idx'),
         ),
         migrations.AlterField(
             model_name='pointofinterest',
             name='category',
-            field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='point_of_interest', to='assignment.pointofinterestcategory'),
+            field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='point_of_interest', to='assignment_ssco.pointofinterestcategory'),
         ),
         migrations.DeleteModel(
             name='PointOfInterestCoordinates',
